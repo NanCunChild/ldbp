@@ -37,7 +37,7 @@
                 android:checked="true"
                 android:minHeight="48dp"
                 android:text="@string/map_pic_normal"
-                android:textColor="#00796B" />
+                android:textColor="#004979" />
 
             <RadioButton
                 android:id="@+id/mapSatellite"
@@ -46,7 +46,7 @@
                 android:layout_weight="1"
                 android:minHeight="48dp"
                 android:text="@string/map_pic_sate"
-                android:textColor="#00796B" />
+                android:textColor="#005379" />
         </RadioGroup>
 
         <ImageButton

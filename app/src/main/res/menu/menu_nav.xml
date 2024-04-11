@@ -4,10 +4,10 @@
     tools:showIn="navigation_view">
 
     <group>
-        <item
-            android:id="@+id/nav_history"
-            android:icon="@drawable/ic_menu_history"
-            android:title="@string/nav_menu_history" />
+<!--        <item-->
+<!--            android:id="@+id/nav_history"-->
+<!--            android:icon="@drawable/ic_menu_history"-->
+<!--            android:title="@string/nav_menu_history" />-->
     </group>
     
     <group>
@@ -27,10 +27,10 @@
 
     <item android:title="@string/nav_menu_more">
         <menu>
-            <item
-                android:id="@+id/nav_update"
-                android:icon="@drawable/ic_menu_upgrade"
-                android:title="@string/nav_menu_upgrade" />
+<!--            <item-->
+<!--                android:id="@+id/nav_update"-->
+<!--                android:icon="@drawable/ic_menu_upgrade"-->
+<!--                android:title="@string/nav_menu_upgrade" />-->
             <item
                 android:id="@+id/nav_feedback"
                 android:icon="@drawable/ic_menu_feedback"

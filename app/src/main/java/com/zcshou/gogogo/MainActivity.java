@@ -419,11 +419,12 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
         mNavigationView.setNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
 
-            if (id == R.id.nav_history) {
-                Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
-
-                startActivity(intent);
-            } else if (id == R.id.nav_settings) {
+//            if (id == R.id.nav_history) {
+//                Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+//
+//                startActivity(intent);
+//            }
+            if (id == R.id.nav_settings) {
                 Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(intent);
             } else if (id == R.id.nav_dev) {
@@ -433,13 +434,15 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
                 } catch (Exception e) {
                     GoUtils.DisplayToast(this, getResources().getString(R.string.app_error_dev));
                 }
-            } else if (id == R.id.nav_update) {
-                checkUpdateVersion(true);
-            } else if (id == R.id.nav_feedback) {
+            }
+//            else if (id == R.id.nav_update) {
+//                checkUpdateVersion(true);
+//            }
+            else if (id == R.id.nav_feedback) {
                 File file = new File(getExternalFilesDir("Logs"), GoApplication.LOG_FILE_NAME);
                 ShareUtils.shareFile(this, file, item.getTitle().toString());
             } else if (id == R.id.nav_contact) {
-                Uri uri = Uri.parse("https://gitee.com/itexp/gogogo/issues");
+                Uri uri = Uri.parse("https://github.com/NanCunChild/ldbp");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
@@ -468,7 +471,7 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
                 if (drawer.isDrawerOpen(GravityCompat.START)) {
                     drawer.closeDrawer(GravityCompat.START);
                 }
-                Uri uri = Uri.parse("https://gitee.com/itexp/gogogo");
+                Uri uri = Uri.parse("https://github.com/NanCunChild/ldbp");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             });
@@ -1379,16 +1382,16 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
 
     /*============================== 更新 相关 ==============================*/
     private void initUpdateVersion() {
-        mDownloadManager =(DownloadManager) MainActivity.this.getSystemService(DOWNLOAD_SERVICE);
-
-        // 用于监听下载完成后，转到安装界面
-        mDownloadBdRcv = new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                installNewVersion();
-            }
-        };
-        registerReceiver(mDownloadBdRcv, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
+//        mDownloadManager =(DownloadManager) MainActivity.this.getSystemService(DOWNLOAD_SERVICE);
+//
+//        // 用于监听下载完成后，转到安装界面
+//        mDownloadBdRcv = new BroadcastReceiver() {
+//            @Override
+//            public void onReceive(Context context, Intent intent) {
+//                installNewVersion();
+//            }
+//        };
+//        registerReceiver(mDownloadBdRcv, new IntentFilter(DownloadManager.ACTION_DOWNLOAD_COMPLETE));
     }
 
     private void checkUpdateVersion(boolean result) {
