@@ -1,4 +1,4 @@
-package com.zcshou.joystick;
+package com.nancunchild.joystick;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -34,12 +34,12 @@ import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.search.sug.SuggestionSearch;
 import com.baidu.mapapi.search.sug.SuggestionSearchOption;
-import com.zcshou.database.DataBaseHistoryLocation;
-import com.zcshou.gogogo.HistoryActivity;
-import com.zcshou.gogogo.MainActivity;
-import com.zcshou.gogogo.R;
-import com.zcshou.utils.GoUtils;
-import com.zcshou.utils.MapUtils;
+import com.nancunchild.database.DataBaseHistoryLocation;
+import com.nancunchild.gogogo.HistoryActivity;
+import com.nancunchild.gogogo.MainActivity;
+import com.nancunchild.gogogo.R;
+import com.nancunchild.utils.GoUtils;
+import com.nancunchild.utils.MapUtils;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

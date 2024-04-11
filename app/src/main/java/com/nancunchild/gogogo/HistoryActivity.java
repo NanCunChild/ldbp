@@ -1,4 +1,4 @@
-package com.zcshou.gogogo;
+package com.nancunchild.gogogo;
 
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -27,8 +27,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.zcshou.database.DataBaseHistoryLocation;
-import com.zcshou.utils.GoUtils;
+import com.nancunchild.database.DataBaseHistoryLocation;
+import com.nancunchild.utils.GoUtils;
 
 public class HistoryActivity extends BaseActivity {
     public static final String KEY_ID = "KEY_ID";

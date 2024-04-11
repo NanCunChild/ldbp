@@ -1,4 +1,4 @@
-package com.zcshou.gogogo;
+package com.nancunchild.gogogo;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -11,10 +11,8 @@ import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
-import android.text.method.MovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.Gravity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -25,7 +23,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
-import com.zcshou.utils.GoUtils;
+import com.nancunchild.utils.GoUtils;
 
 import java.util.ArrayList;
 
@@ -237,8 +235,8 @@ public class WelcomeActivity extends AppCompatActivity {
     @SuppressLint("ClickableViewAccessibility")
     private void checkAgreementAndPrivacy() {
         preferences = getSharedPreferences(KEY_ACCEPT_AGREEMENT, MODE_PRIVATE);
-        mPrivacy = preferences.getBoolean(KEY_ACCEPT_PRIVACY, false);
-        mAgreement = preferences.getBoolean(KEY_ACCEPT_AGREEMENT, false);
+        mPrivacy = preferences.getBoolean(KEY_ACCEPT_PRIVACY, true);
+        mAgreement = preferences.getBoolean(KEY_ACCEPT_AGREEMENT, true);
 
         checkBox = findViewById(R.id.check_agreement);
         // 拦截 CheckBox 的点击事件

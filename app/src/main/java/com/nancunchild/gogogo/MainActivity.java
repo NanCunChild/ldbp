@@ -1,4 +1,4 @@
-package com.zcshou.gogogo;
+package com.nancunchild.gogogo;
 
 import android.app.DownloadManager;
 import android.content.BroadcastReceiver;
@@ -8,7 +8,6 @@ import android.content.ComponentName;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -96,12 +95,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.zcshou.service.ServiceGo;
-import com.zcshou.database.DataBaseHistoryLocation;
-import com.zcshou.database.DataBaseHistorySearch;
-import com.zcshou.utils.ShareUtils;
-import com.zcshou.utils.GoUtils;
-import com.zcshou.utils.MapUtils;
+import com.nancunchild.service.ServiceGo;
+import com.nancunchild.database.DataBaseHistoryLocation;
+import com.nancunchild.database.DataBaseHistorySearch;
+import com.nancunchild.utils.ShareUtils;
+import com.nancunchild.utils.GoUtils;
+import com.nancunchild.utils.MapUtils;
 
 import com.elvishew.xlog.XLog;
 

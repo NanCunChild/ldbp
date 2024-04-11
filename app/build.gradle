@@ -19,7 +19,7 @@ android {
     compileSdk 32
     buildToolsVersion = '34.0.0'
     defaultConfig {
-        applicationId "com.zcshou.gogogo"
+        applicationId "com.nancunchild.gogogo"
         minSdkVersion 27
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 32
@@ -76,7 +76,7 @@ android {
         includeInApk false
         includeInBundle false
     }
-    namespace 'com.zcshou.gogogo'
+    namespace 'com.nancunchild.gogogo'
 //    lintOptions {
 //        checkReleaseBuilds false
 //        // Or, if you prefer, you can continue to check for errors in release builds,

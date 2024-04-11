@@ -71,11 +71,11 @@
 
     </LinearLayout>
 
-    <com.zcshou.joystick.ButtonView
+    <com.nancunchild.joystick.ButtonView
         android:id="@+id/joystick_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <com.zcshou.joystick.RockerView
+    <com.nancunchild.joystick.RockerView
         android:id="@+id/joystick_rocker"
         android:layout_width="@dimen/joystick_rockerview_width"
         android:layout_height="@dimen/joystick_rockerview_height"/>

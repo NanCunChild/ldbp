@@ -1,4 +1,4 @@
-package com.zcshou.service;
+package com.nancunchild.service;
 
 import android.annotation.SuppressLint;
 import android.app.Notification;
@@ -27,9 +27,9 @@ import android.os.SystemClock;
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 
-import com.zcshou.gogogo.MainActivity;
-import com.zcshou.gogogo.R;
-import com.zcshou.joystick.JoyStick;
+import com.nancunchild.gogogo.MainActivity;
+import com.nancunchild.gogogo.R;
+import com.nancunchild.joystick.JoyStick;
 
 public class ServiceGo extends Service {
     // 定位相关变量

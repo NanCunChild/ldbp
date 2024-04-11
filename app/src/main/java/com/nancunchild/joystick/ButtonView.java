@@ -1,4 +1,4 @@
-package com.zcshou.joystick;
+package com.nancunchild.joystick;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.zcshou.gogogo.R;
+import com.nancunchild.gogogo.R;
 
 public class ButtonView extends LinearLayout {
     private ButtonViewClickListener mListener;

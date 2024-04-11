@@ -75,7 +75,7 @@
 
         <service
             android:exported="false"
-            android:name="com.zcshou.service.ServiceGo" />
+            android:name="com.nancunchild.service.ServiceGo" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
